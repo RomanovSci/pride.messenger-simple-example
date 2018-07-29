@@ -8,7 +8,7 @@ $(document).ready(() => {
                 $(this).prop('disabled', true);
                 console.log(session);
 
-                let uri = 'messenger/chat_room/700e0b45-2d41-48e1-8266-bc86d684890c';
+                let uri = 'messenger/chat_room/b4b8358b-adca-4f0b-a036-64ac5f26eefc';
                 let messageList = $('#message-list');
 
                 session.subscribe(uri, function (uri, response) {
@@ -46,7 +46,7 @@ $(document).ready(() => {
                     }
                 });
 
-                $('#send').click(function(e) {
+                $('#send').click(function() {
                     session.publish(uri, {
                         action: 'chat_message_send',
                         text: $('#text').val(),
