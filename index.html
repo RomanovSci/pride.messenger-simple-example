@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="container">
+    <div class="row" style="margin-top: 30px">
+      <div class="col-md-12 bg-info">
+        <div class="row" style="padding: 20px; background-color: teal">
+          <div class="col-md-12">
+            <form>
+              <div class="form-group">
+                <input id="connect" class="form-control btn btn-success" type="button" value="Connect: 700e0b45-2d41-48e1-8266-bc86d684890c">
+              </div>
+              <div class="form-group">
+                <label>Token</label>
+                <input id="token" class="form-control" type="text" placeholder="individual token">
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea id="text2" class="form-control" rows="3" placeholder="text message"></textarea>
+              </div>
+              <div class="form-group">
+                <input id="send" class="btn btn-default" type="button" value="Send">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row bg-danger">
+          <div class="col-md-12">
+            <h3>Messages</h3>
+              <ul id="message-list" class="list-group">
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/vendor/autobahn.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
